@@ -11,16 +11,6 @@ Este proyecto está diseñado para manejar la construcción, actualización, ini
 ### 1. **Build Section (Construcción)**
 Esta sección está destinada a construir proyectos específicos y todos los proyectos en general.
 
-- **build-project**: Construye un proyecto específico.
-  - Uso:
-    ```bash
-    make build-project PROJECT=<nombre-del-proyecto>
-    ```
-  - Ejemplo:
-    ```bash
-    make build-project PROJECT=utp-microservice-advertisement
-    ```
-
 - **build**: Construye todos los proyectos definidos en el `Makefile`.
   - Uso:
     ```bash
@@ -30,16 +20,6 @@ Esta sección está destinada a construir proyectos específicos y todos los pro
 ### 2. **Update Section (Actualización)**
 Esta sección se usa para actualizar un proyecto específico o todos los proyectos.
 
-- **update-project**: Actualiza un proyecto específico y establece la rama.
-  - Uso:
-    ```bash
-    make update-project PROJECT=<nombre-del-proyecto> BRANCH=<rama>
-    ```
-  - Ejemplo:
-    ```bash
-    make update-project PROJECT=utp-microservice-advertisement BRANCH=develop
-    ```
-
 - **update**: Actualiza todos los proyectos.
   - Uso:
     ```bash
@@ -48,36 +28,6 @@ Esta sección se usa para actualizar un proyecto específico o todos los proyect
 
 ### 3. **Start Section (Inicio)**
 Comandos para iniciar servicios y contenedores.
-
-- **start-project**: Inicia un proyecto específico.
-  - Uso:
-    ```bash
-    make start-project PROJECT=<nombre-del-proyecto>
-    ```
-
-- **start-infrastructure**: Inicia la infraestructura local.
-  - Uso:
-    ```bash
-    make start-infrastructure
-    ```
-
-- **start-services**: Inicia todos los servicios.
-  - Uso:
-    ```bash
-    make start-services
-    ```
-
-- **start-portal**: Inicia el portal.
-  - Uso:
-    ```bash
-    make start-portal
-    ```
-
-- **solr-data-import**: Ejecuta la importación de datos en Solr.
-  - Uso:
-    ```bash
-    make solr-data-import
-    ```
 
 - **up**: Inicia todos los contenedores de infraestructura, servicios, portal y Solr.
   - Uso:
