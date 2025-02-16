@@ -8,7 +8,16 @@ Este proyecto está diseñado para manejar la construcción, actualización, ini
 
 ## Secciones de Comandos
 
-### 1. **Build Section (Construcción)**
+### 1. **CLONE Section**
+Esta sección está destinada a la descarga de todos los proyecto imbolucrados.
+
+- **clone**: clona todos los proyectos necesarios`.
+  - Uso:
+    ```bash
+    make clone
+    ```
+
+### 2. **Build Section (Construcción)**
 Esta sección está destinada a construir proyectos específicos y todos los proyectos en general.
 
 - **build**: Construye todos los proyectos definidos en el `Makefile`.
@@ -17,7 +26,8 @@ Esta sección está destinada a construir proyectos específicos y todos los pro
     make build
     ```
 
-### 2. **Update Section (Actualización)**
+
+### 3. **Update Section (Actualización)**
 Esta sección se usa para actualizar un proyecto específico o todos los proyectos.
 
 - **update**: Actualiza todos los proyectos.
@@ -26,7 +36,7 @@ Esta sección se usa para actualizar un proyecto específico o todos los proyect
     make update
     ```
 
-### 3. **Start Section (Inicio)**
+### 4. **Start Section (Inicio)**
 Comandos para iniciar servicios y contenedores.
 
 - **up**: Inicia todos los contenedores de infraestructura, servicios, portal y Solr.
@@ -41,7 +51,7 @@ Comandos para iniciar servicios y contenedores.
     make down
     ```
 
-### 4. **Help Section (Ayuda)**
+### 5. **Help Section (Ayuda)**
 - **help**: Muestra la lista de todos los comandos disponibles con su descripción.
   - Uso:
     ```bash

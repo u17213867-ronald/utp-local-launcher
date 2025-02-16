@@ -7,6 +7,19 @@ include .env
 
 BRANCH ?= develop
 
+# Clone Section
+
+clone-project: ##@Clone Clone specific project and set branch  PROJECT=neoauto-microservice-finance BRANC=develop
+	cd $(PROJECT_PATH) && \
+	git clone git@github.com:u17213867-ronald/$(PROJECT).git && \
+	cd $(PROJECT) && \
+	git fetch origin && \
+	git checkout $(BRANCH)
+
+clone: ##@Clone Clone all projects
+	@make clone-project PROJECT=utp-local-infrastructure
+	@make clone-project PROJECT=utp-microservice-advertisement
+	@make clone-project PROJECT=utp-web
 
 # Build Section
 
@@ -34,7 +47,6 @@ update-project: ##@Update Update specific project and set branch  PROJECT=neoaut
 update: ##@Update Update all projects
 	@make update-project PROJECT=utp-local-infrastructure
 	@make update-project PROJECT=utp-microservice-advertisement
-	@make update-project PROJECT=utp-solr
 	@make update-project PROJECT=utp-web
 
 
