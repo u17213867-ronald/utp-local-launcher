@@ -57,25 +57,3 @@ Comandos para iniciar servicios y contenedores.
     ```bash
     make help
     ```
-
-## Variables de Estilo
-
-El archivo `Makefile` incluye una sección que utiliza colores para mejorar la legibilidad de los mensajes en la terminal:
-- **GREEN**: Color verde
-- **WHITE**: Color blanco
-- **YELLOW**: Color amarillo
-- **RESET**: Resetea el color a los valores predeterminados de la terminal
-
-## Requerimientos
-
-Asegúrate de tener las siguientes herramientas instaladas:
-- `make`: Para ejecutar los comandos.
-- `docker`: Para manejar contenedores.
-- `perl`: Utilizado para generar la salida del comando de ayuda.
-
-## Cómo usar el `Makefile`
-
-1. Clona el repositorio y navega hasta el directorio donde se encuentra el `Makefile`.
-2. Ejecuta los comandos de `make` según sea necesario. Ejemplo:
-   ```bash
-   make build
