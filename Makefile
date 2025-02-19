@@ -20,6 +20,7 @@ clone: ##@Clone Clone all projects
 	@make clone-project PROJECT=utp-local-infrastructure
 	@make clone-project PROJECT=utp-microservice-advertisement
 	@make clone-project PROJECT=utp-web
+	@make clone-project PROJECT=utp-solr
 
 # Build Section
 
@@ -32,6 +33,7 @@ build-project: ##@Build Build specific project  PROJECT=utp-microservice-adverti
 build: ##@Build Build all projects
 	@make build-project PROJECT=utp-microservice-advertisement
 	@make build-project PROJECT=utp-web
+	@make build-project PROJECT=utp-solr
 
 # Update Section
 
@@ -48,7 +50,7 @@ update: ##@Update Update all projects
 	@make update-project PROJECT=utp-local-infrastructure
 	@make update-project PROJECT=utp-microservice-advertisement
 	@make update-project PROJECT=utp-web
-
+	@make update-project PROJECT=utp-solr
 
 # Start Section
 
@@ -73,7 +75,7 @@ up: ##@Global Start all containers
 	@make start-infrastructure
 	@make start-services
 	@make start-portal
-	@make solr-data-import
+	@make start-project PROJECT=utp-solr
 
 down: ##@Global Stop all containers
 	@docker rm -f $(shell docker ps -aq)
