@@ -65,7 +65,7 @@ start-infrastructure: ##@Start Start local infrastructure
 
 start-services: ##@Start Start all services
 	@make start-project PROJECT=utp-microservice-advertisement
-	@make start-project PROJECT=utp-microservice-utp
+	@make start-project PROJECT=utp-microservice-user
 
 start-portal: ##@Start Start portal
 	@make start-project PROJECT=utp-web
